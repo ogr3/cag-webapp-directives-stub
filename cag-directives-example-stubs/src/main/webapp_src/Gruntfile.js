@@ -74,8 +74,8 @@ module.exports = function ( grunt ) {
         port: 9002,
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: '0.0.0.0',
-        // livereload: 35729,
-        livereload: false,
+        livereload: 35729,
+        //livereload: false,
         middleware: function (connect, options) {
           if (!Array.isArray(options.base)) {
             options.base = [options.base];
