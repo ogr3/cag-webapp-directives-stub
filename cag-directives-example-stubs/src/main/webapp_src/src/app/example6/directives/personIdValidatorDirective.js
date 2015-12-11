@@ -36,7 +36,7 @@ angular.module('directives').directive('personIdValidSix', ['$log', function ($l
             elem.bind('input', function() {
                 if (scope.noDisplay()) {
                     if (scope.personId) {
-                        var starString = scope.personId.slice(0, scope.personId.length - 1) + '*';
+                        var starString = scope.personId.slice(0, scope.personId.length - 1) + 'x';
                         setHiddenPersonId(scope.personId.slice(scope.personId.length - 1));
                         scope.personId = starString;
                         scope.$apply(scope.personId = starString);

@@ -11,6 +11,7 @@ angular.module('directives').directive('personIdValidTwo', ['$log', function ($l
             elem.bind('blur', function() {
                 if (scope.personId) {
                     if (scope.personId.length > 12 || scope.personId.length < 12) {
+                        scope.personId = 'WTF, dude????';
                         $log.log('personId not valid');
                     } else {
                         $log.log('personId is valid');
